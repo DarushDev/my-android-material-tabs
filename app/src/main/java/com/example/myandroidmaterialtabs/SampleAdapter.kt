@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter
  * Created by Darush on 1/18/2018.
  */
 class SampleAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+
     override fun getItem(position: Int): Fragment? = when (position) {
         0 -> FragmentOne.newInstance()
         1 -> FragmentTwo.newInstance()
