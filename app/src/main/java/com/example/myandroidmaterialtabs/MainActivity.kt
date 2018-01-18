@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         viewPager.adapter = adapter
         tabLayout.setupWithViewPager(viewPager)
+        tabLayout.getTabAt(0)!!.setIcon(android.R.drawable.ic_dialog_email)
+        tabLayout.getTabAt(1)!!.setIcon(android.R.drawable.ic_dialog_info)
+        tabLayout.getTabAt(2)!!.setIcon(android.R.drawable.ic_dialog_alert)
 
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
             override fun onTabReselected(tab: TabLayout.Tab?) {
