@@ -16,10 +16,11 @@ class SampleAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         else -> null
     }
 
+    // If you don't want tab texts and want only icons then don't override this method
     override fun getPageTitle(position: Int): CharSequence = when (position) {
-        0 -> "Tab 1 Item"
-        1 -> "Tab 2 Item"
-        2 -> "Tab 3 Item"
+        0 -> "Tab 1"
+        1 -> "Tab 2"
+        2 -> "Tab 3"
         else -> ""
     }
 
